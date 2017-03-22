@@ -42,6 +42,15 @@ public class SecondPartialExamO {
             lc.soundSiren();
             }
         }
+    for(IVehicle temp : myVehicle){
+        if(temp instanceof ILandVehicle){
+            ((ILandVehicle) temp).drive();
+            }
+    
+        if(temp instanceof IEmergency){
+            ((IEmergency) temp).soundSiren();
+            }
+        }
     }
     
 }
